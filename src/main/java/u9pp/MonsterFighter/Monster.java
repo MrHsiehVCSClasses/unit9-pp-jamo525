@@ -22,7 +22,9 @@ public class Monster extends Combatant
   */
   public int getExpGiven()
   {
-    return exp;
+    if (exp >= 0)
+      return exp;
+    return 0;
   }
   /*
   @return number of turns taken by monsters

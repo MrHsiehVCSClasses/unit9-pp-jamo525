@@ -32,16 +32,14 @@ public class Main
         scanner.close();
       */
   ChessPiece[][] testArray = new ChessPiece[8][8];
-  ChessPiece test = new Pawn (testArray, 1, 3, true);
-  ChessPiece test2 = new Pawn (testArray, 5, 4, false);
-testArray[1][3] = test;
-testArray[5][4] = test2;
-System.out.println(test.canMoveTo(3, 3));
-test.doMove(3, 3);
-System.out.println(test2.canMoveTo(4, 4));
-test.doMove(4,3);
-System.out.println(test.canMoveTo(4, 4));
-test.doMove(4,4);
+  ChessPiece test = new King (testArray, 1, 2, false);
+  ChessPiece test2 = new King (testArray, 0, 0, false);
+testArray[1][2] = test;
+testArray[0][0] = test2;
+System.out.println(test.canMoveTo(0,1));
+System.out.println(test.canMoveTo(1,1));
+System.out.println(test2.canMoveTo(0,1));
+System.out.println(test2.canMoveTo(1,1));
 
 
     }

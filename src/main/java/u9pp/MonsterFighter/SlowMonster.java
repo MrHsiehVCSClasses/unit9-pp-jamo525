@@ -26,7 +26,7 @@ public class SlowMonster extends Monster
     else
     {
       increaseMonsterTurn();
-      return "Monster does not attack.";
+      return this.getName() + " does not attack.";
     }
   }
 }

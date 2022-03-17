@@ -23,7 +23,7 @@ public class HealingMonster extends Monster
   public String takeTurn (Combatant target)
   {
     this.heal(healFactor); 
-    return super.takeTurn(target) + " and now has " + this.getHealth() + " life."; 
+    return super.takeTurn(target) + " and healed up to " + healFactor + " life."; 
   }
 
   /*
